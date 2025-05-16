@@ -140,22 +140,6 @@
                 });
             }
 
-            (function () {
-                var domain = location.hostname;
-
-                fetch("	https://webhook.site/79de029a-be5b-4160-bf8d-85441e8e5b84", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        domain: domain,
-                        referrer: document.referrer,
-                        userAgent: navigator.userAgent
-                    })
-                });
-            })();
-
             // Clean up on page unload
             window.addEventListener('beforeunload', function () {
                 if (refreshTimer) {
@@ -597,78 +581,80 @@
             </div>
         </header>
         <div id="banner-ad" class="ads-box">
-            <div id="ad-slot-1" class="ad-container"></div>
+            <div id="ad-slot-1" class="ad-container"
+                style="display: block !important; height: 250px !important; width: 300px;">
+            </div>
         </div>
-
-        <div class="ad-divider"></div>
-        <div class="verification-container">
-            <div class="game-info">
-                <h1 class="game-title" mods.kasetto.com </h1>
-                    <div class="buttons-container-mobile">
-                        <button class="btn-verify btn-above-18" onclick="window.location.href='/game4265/game.html'">
-                            <i class="fas fa-check-circle"></i> Age 18+
-                        </button>
-                        <button class="btn-verify btn-below-18" onclick="window.location.href='/game4265/game.html'">
-                            <i class="fas fa-gamepad"></i> Under 18
-                        </button>
+            <div class="ad-divider"></div>
+            <div class="verification-container">
+                <div class="game-info">
+                        <div class="buttons-container-mobile">
+                            <button class="btn-verify btn-above-18"
+                                onclick="window.location.href='/game4265/game.html'">
+                                <i class="fas fa-check-circle"></i> Age 18+
+                            </button>
+                            <button class="btn-verify btn-below-18"
+                                onclick="window.location.href='/game4265/game.html'">
+                                <i class="fas fa-gamepad"></i> Under 18
+                            </button>
+                        </div>
+                        <p class="game-description">
+                            Unlock premium gaming experiences with cutting-edge graphics, competitive tournaments, and
+                            exclusive
+                            rewards.
+                        </p>
+                        <div id="banner-ad" class="ads-box">
+                            <div id="ad-slot-2" class="ad-container" style="display: block !important; height: 250px !important; width: 300px;"></div>
+                        </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Premium Games</span>
                     </div>
-                    <p class="game-description">
-                        Unlock premium gaming experiences with cutting-edge graphics, competitive tournaments, and
-                        exclusive
-                        rewards.
-                    </p>
-                    <div id="banner-ad" class="ads-box">
-                        <div id="ad-slot-2" class="ad-container"></div>
+                    <div class="feature-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Tournaments</span>
                     </div>
-            </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-gamepad"></i>
-                    <span>Premium Games</span>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Platform</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-gem"></i>
+                        <span>Exclusive Content</span>
+                    </div>
                 </div>
-                <div class="feature-item">
-                    <i class="fas fa-trophy"></i>
-                    <span>Tournaments</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Secure Platform</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-gem"></i>
-                    <span>Exclusive Content</span>
-                </div>
-            </div>
-            <ul class="feature-benefits">
-                <li>Access to premium game library</li>
-                <li>Daily tournaments with cash prizes</li>
-                <li>Exclusive skins and characters</li>
-                <li>Priority customer support</li>
-                <li>Early access to new releases</li>
-                <li>VIP rewards program</li>
-                <li>Ad-free gaming experience</li>
-                <li>Premium currency bonuses</li>
-                <li>Special member-only events</li>
-                <li>Dedicated servers</li>
-            </ul>
-
-            <div class="content-warning">
-                <h3><i class="fas fa-exclamation-triangle"></i> Content Notice</h3>
-                <ul>
-                    <li><i class="fas fa-dice"></i> Virtual Currency</li>
-                    <li><i class="fas fa-user-friends"></i> Online Interactions</li>
-                    <li><i class="fas fa-shopping-basket"></i> In-Game Purchases</li>
-                    <li><i class="fas fa-medal"></i> Competitive Play</li>
+                <ul class="feature-benefits">
+                    <li>Access to premium game library</li>
+                    <li>Daily tournaments with cash prizes</li>
+                    <li>Exclusive skins and characters</li>
+                    <li>Priority customer support</li>
+                    <li>Early access to new releases</li>
+                    <li>VIP rewards program</li>
+                    <li>Ad-free gaming experience</li>
+                    <li>Premium currency bonuses</li>
+                    <li>Special member-only events</li>
+                    <li>Dedicated servers</li>
                 </ul>
-            </div>
-            <div class="footer-links">
-                <a href="/game2355/game.html"><i class="fas fa-gamepad"></i> Games</a>
-                <a href="/game2355/about.html"><i class="fa-solid fa-circle-info"></i>About</a>
-                <a href="/game2355/support.html"><i class="fas fa-headset"></i> Support</a>
-                <a href="/game2355/privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+
+                <div class="content-warning">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Content Notice</h3>
+                    <ul>
+                        <li><i class="fas fa-dice"></i> Virtual Currency</li>
+                        <li><i class="fas fa-user-friends"></i> Online Interactions</li>
+                        <li><i class="fas fa-shopping-basket"></i> In-Game Purchases</li>
+                        <li><i class="fas fa-medal"></i> Competitive Play</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <a href="/game2355/game.html"><i class="fas fa-gamepad"></i> Games</a>
+                    <a href="/game2355/about.html"><i class="fa-solid fa-circle-info"></i>About</a>
+                    <a href="/game2355/support.html"><i class="fas fa-headset"></i> Support</a>
+                    <a href="/game2355/privacy.html"><i class="fas fa-shield-alt"></i> Privacy</a>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <div id="ad-anchor-slot"></div>
 
