@@ -1,5 +1,6 @@
 google.com, pub-8285944275535498, DIRECT, f08c47fec0942fa0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -16,3 +17,5 @@ google.com, pub-8285944275535498, DIRECT, f08c47fec0942fa0
 
 =======
 >>>>>>> 06b3827 (committt)
+=======
+>>>>>>> 06b382782e93628ea3ab0c25530ce984d59d1e45
