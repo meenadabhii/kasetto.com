@@ -39,20 +39,20 @@
 
           // Define Ad Slots with consistent IDs
           adSlot1 = googletag.defineSlot(
-            '/23270265301/sahajanand_kasetto.com_native',
+            '/23270265301/kasetto.com_native',
             [[300, 250], [320, 480], [250, 250], [300, 100], 'fluid', [336, 280]],
             'ad-slot-1'
           ).addService(pubads);
 
           adSlot2 = googletag.defineSlot(
-            '/23270265301/sahajanand_kasetto.com_native',
+            '/23270265301/kasetto.com_native',
             [[300, 250], [320, 480], [250, 250], [300, 100], 'fluid', [336, 280]],
             'ad-slot-2'
           ).addService(pubads);
 
           // Define anchor ad with proper ID
           anchorSlot = googletag.defineOutOfPageSlot(
-            '/23270265301/sahajanand_kasetto.com_native',
+            ' /23270265301/kasetto.com_native',
             googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
           );
 
@@ -169,7 +169,7 @@
   <script>
     window.googletag = window.googletag || { cmd: [] };
     googletag.cmd.push(function () {
-      googletag.defineSlot('/23270265301/sahajanand_kasetto.com_native', [300, 300], 'div-gpt-ad-23195855414-0').addService(googletag.pubads());
+      googletag.defineSlot(' /23270265301/kasetto.com_native', [300, 300], 'div-gpt-ad-23195855414-0').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -840,7 +840,7 @@
     window.googletag = window.googletag || { cmd: [] };
     var anchorSlot;
     googletag.cmd.push(function () {
-      anchorSlot = googletag.defineOutOfPageSlot('/23270265301/sahajanand_kasetto.com_native', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
+      anchorSlot = googletag.defineOutOfPageSlot('/23270265301/kasetto.com_native', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
       if (anchorSlot) {
         anchorSlot.addService(googletag.pubads());
       }
@@ -863,7 +863,7 @@
           googletag.cmd.push(function () {
             try {
               const rewardedSlot = googletag
-                .defineOutOfPageSlot('/23270265301/sahajanand_kasetto.com_rewarded', googletag.enums.OutOfPageFormat.REWARDED)
+                .defineOutOfPageSlot('/23270265301/kasetto.com_rewarded', googletag.enums.OutOfPageFormat.REWARDED)
                 .addService(googletag.pubads());
 
               googletag.enableServices();
